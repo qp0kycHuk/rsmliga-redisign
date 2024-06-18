@@ -1,7 +1,7 @@
 const elementsSizes = {
-  xs: '24px',
-  sm: '32px',
-  base: '42px',
+  xs: '30px',
+  sm: '38px',
+  base: '46px',
   lg: '52px',
   xl: '64px',
 }
@@ -32,8 +32,8 @@ module.exports = {
       xs: 420 + 'px',
       sm: 580 + 'px',
       md: 740 + 'px',
-      lg: 1170 + 'px',
-      xl: 1230 + 'px',
+      lg: 1120 + 'px',
+      xl: 1120 + 'px',
     },
     colors: {
       primary: withOpacity('--primary-rgb'),
@@ -65,12 +65,16 @@ module.exports = {
         [65]: '16.25rem'
       },
       fontSize: {
+        'xxs': ['11px', '1.2'],
         '1.5xl': ['1.375rem', '1.35'],
         '2.1xl': ['1.5625rem', '1.35'],
         '2.5xl': ['1.75rem', '1.35'],
         '3.5xl': ['2rem', '1.35'],
         '4.5xl': ['2.5rem', '1.35'],
       },
+      lineHeight: {
+        xs: '1.1'
+      }
     },
   },
   plugins: [

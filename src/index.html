@@ -1,5 +1,302 @@
 <%= require('./html-includes/header.html')() %>
 
+<header class="top-header">
+  <div class="text-sm">344029, г.Ростов-на-Дону, ул. Менжинского, 2Л, офис №106</div>
 
+  <div class="ml-auto"></div>
+
+  <a href="javascript:;" class="btn btn-text gap-4 text-default">
+    <c-icon class="icon text-2.5xl" href="img/icons.svg#user-contur"></c-icon>
+    Личный кабинет
+  </a>
+  <a href="javascript:;" class="btn btn-default btn-contur btn-sm border-default/20">Регистрация</a>
+</header>
+
+<section class="bg-primary py-1 text-white">
+  <img src="img/rostselmash.png" alt="" class="w-52">
+  <div class="text-xxs opacity-60">титульный партнер</div>
+</section>
+
+<header class="header">
+  <button class="btn btn-icon btn-sm" data-toggle-link="menu">
+    <c-icon class="icon text-3.5xl" href="img/icons.svg#menu"></c-icon>
+  </button>
+  <img src="img/logo.png" alt="" class="header-logo">
+  <div class="header-partner">
+    <img src="img/rostselmash.png" alt="" class="header-partner-image">
+    <div class="text-xs opacity-60">титульный партнер</div>
+  </div>
+</header>
+
+<div class="menu" id="menu">
+  <div class="flex items-center gap-3">
+    <button class="btn btn-icon btn-sm btn-primary" data-toggle-link="menu">
+      <c-icon class="icon text-3.5xl" href="img/icons.svg#cross"></c-icon>
+    </button>
+    <img src="img/logo-primary.png" alt="" class="header-logo">
+  </div>
+</div>
+<div class="menu-shadow"></div>
+
+<header class="nav">
+  <!-- Ассоциация -->
+  <c-menu>
+    <c-menu-button class="btn btn-white gap-3 btn-sm cursor-pointer">
+      Ассоциация
+      <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-2" placement="bottom">
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+    </c-menu-items>
+  </c-menu>
+
+  <!-- Виды регби -->
+  <c-menu>
+    <c-menu-button class="btn btn-white gap-3 btn-sm cursor-pointer">
+      Виды регби
+      <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-2" placement="bottom">
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+    </c-menu-items>
+  </c-menu>
+
+  <!-- Чемпионы -->
+  <c-menu>
+    <c-menu-button class="btn btn-white gap-3 btn-sm cursor-pointer">
+      Чемпионы
+      <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-2" placement="bottom">
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+    </c-menu-items>
+  </c-menu>
+
+  <a href="javascript:;" class="btn btn-white gap-3 btn-sm cursor-pointer">
+    Новости
+  </a>
+
+  <!-- Медиа -->
+  <c-menu>
+    <c-menu-button class="btn btn-white gap-3 btn-sm cursor-pointer">
+      Медиа
+      <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-1" placement="bottom">
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+
+    </c-menu-items>
+  </c-menu>
+
+  <a href="javascript:;" class="btn btn-white gap-3 btn-sm pl-2 cursor-pointer">
+    <c-icon class="icon text-2.5xl" href="img/icons.svg#bag"></c-icon>
+    Фан-шоп
+  </a>
+
+  <div class="flex gap-1 items-center">
+    <a href="javascript:;" class="btn btn-blue btn-icon">
+      <img src="img/soc-color/vk.svg" alt="">
+    </a>
+    <a href="javascript:;" class="btn btn-blue btn-icon">
+      <img src="img/soc-color/telegram.svg" alt="">
+    </a>
+    <a href="javascript:;" class="btn btn-red btn-icon">
+      <img src="img/soc-color/youtube.svg" alt="">
+    </a>
+  </div>
+</header>
+
+<section class="started">
+  <div class="started-image">
+    <img src="img/started.jpg" alt="" class="absolute-fit object-cover">
+    <div class="started-shadow absolute-fit"></div>
+  </div>
+  <div class="started-inner">
+    <div class="started-content">
+      <div class="started-title">
+        Развиваем <br>
+        тэг-регби в России
+      </div>
+      <div class="started-subtitle">
+        Бесконтактный регби – в школы
+      </div>
+      <a href="javascript:;" class="btn btn-primary btn-fill px-8 mt-12">
+        <span class="font-semibold">Подробнее</span>
+      </a>
+    </div>
+    <div class="started-counter">
+      <div class="started-counter-item">
+        <div class="started-counter-value">4</div>
+        <div class="started-counter-name">сезона</div>
+      </div>
+      <div class="started-counter-item">
+        <div class="started-counter-value">400</div>
+        <div class="started-counter-name">
+          образовательных
+          организаций
+        </div>
+      </div>
+      <div class="started-counter-item">
+        <div class="started-counter-value">1 500</div>
+        <div class="started-counter-name">команд</div>
+      </div>
+      <div class="started-counter-item">
+        <div class="started-counter-value">28 000</div>
+        <div class="started-counter-name">участников</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="live p-section overflow-hidden">
+  <div class="flex md:items-center gap-3 mb-11 max-md:flex-col">
+    <div class="flex items-center gap-4">
+      <div class="title">Матчи</div>
+      <div class="flex items-center gap-2">
+        <div class="size-2 bg-primary rounded-full">
+          <div class="size-full bg-primary rounded-full animate-ping"></div>
+        </div>
+        <div class="font-medium">Live</div>
+      </div>
+    </div>
+
+    <c-menu class="md:ml-auto flex items-start md:items-center max-md:flex-col gap-2">
+      <div class="font-medium">Соревнование</div>
+      <c-menu-button class="btn btn-primary btn-text gap-3 btn-sm cursor-pointer max-w-full">
+        <div class="w-96 truncate underline underline-offset-4">
+          Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
+        </div>
+        <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 w-96" placement="bottom-end">
+        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
+          <span class="text-default text-sm leading-xs">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
+          </span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
+          <span class="text-default text-sm leading-xs">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
+          </span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
+          <span class="text-default text-sm leading-xs">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
+          </span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
+          <span class="text-default text-sm leading-xs">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
+          </span>
+        </a>
+      </c-menu-items>
+    </c-menu>
+  </div>
+  <div class="live-slider relative">
+    <div class="swiper -mx-1 sm:-mx-2.5 max-md:overflow-visible">
+      <div class="swiper-wrapper">
+        <% for(let i = 0; i < 10; i++) { %>
+        <div class="swiper-slide w-80 md:w-1/2 lg:w-1/3 px-1 sm:px-2.5">
+          <div class="live-item h-full">
+            <div class="text-sm">
+              г. Ростов-на-Дону ул. Пойменная,
+              2а ГБУ ДО РО «СШОР № 5»
+            </div>
+
+            <div class="flex items-center gap-2 mt-2">
+              <c-icon class="icon text-primary" href="img/icons.svg#calendar"></c-icon>
+              <span class="text-sm ">
+                Сб <span class="opacity-40">|</span> 06.04 <span class="opacity-40">|</span> 13:30
+              </span>
+            </div>
+
+            <div class="mt-6 divide-y divide-default/10 border border-default/10 rounded-md overflow-hidden">
+              <div class="flex items-center gap-4 p-2 bg-default/5 text-xs">
+                <div class="w-1"></div>
+                <div class="opacity-60"> Команды </div>
+                <div class="ml-auto w-11 text-center opacity-60">Осн</div>
+              </div>
+              <div class="flex items-center gap-4 p-2">
+                <div class="w-1 h-11 rounded-lg shrink-0" style="background: #E29337;"></div>
+                <div class="text-sm">
+                  ГБУ ДО РО «СШОР № 5»
+                  2010г. (3)
+                </div>
+                <div class="size-11 rounded-md flex shrink-0 live-item-score ml-auto">
+                  <div class="font-semibold m-auto">0</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 p-2">
+                <div class="w-1 h-11 rounded-lg shrink-0" style="background: #44DDFF;"></div>
+                <div class="text-sm font-semibold">
+                  ГБУ ДО РО «СШОР № 5»
+                  2010г. (3)
+                </div>
+                <div class="size-11 rounded-md flex shrink-0 live-item-win ml-auto">
+                  <div class="font-semibold m-auto">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 mt-4">
+              <img src="img/trophy.svg" alt="" class="w-4 h-6">
+              <div class="text-sm">Основное</div>
+            </div>
+            <div class="mt-auto"></div>
+            <button class="btn btn-primary btn-light gap-1.5 group btn-sm w-full mt-4">
+              <div class="size-1.5 bg-primary rounded-full">
+                <div class="size-full bg-primary rounded-full group-hover:animate-ping"></div>
+              </div>
+              <span class="font-semibold">Смотреть прямой эфир</span>
+            </button>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="absolute top-1/2 -translate-y-1/2 right-full mr-4 max-md:hidden">
+      <button class="btn btn-icon btn-l3 btn-fill rounded-full shadow-xl live-slider-prev">
+        <c-icon class="icon text-lg text-default" href="img/icons.svg#to-left"></c-icon>
+      </button>
+    </div>
+    <div class="absolute top-1/2 -translate-y-1/2 left-full ml-4 max-md:hidden">
+      <button class="btn btn-icon btn-l3 btn-fill rounded-full shadow-xl live-slider-next">
+        <c-icon class="icon text-lg text-default" href="img/icons.svg#to-right"></c-icon>
+      </button>
+    </div>
+  </div>
+</section>
+<script>
+  new Swiper('.live-slider>.swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      prevEl: '.live-slider-prev',
+      nextEl: '.live-slider-next',
+    },
+    breakpoints: {
+      [769.98]: {
+        centeredSlides: false,
+
+      }
+    }
+  })
+</script>
+
+<div class="h-[2000px]"></div>
 
 <%= require('./html-includes/footer.html')() %>
