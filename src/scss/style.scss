@@ -226,6 +226,7 @@ body {
     inset     : 0;
     background: rgba(0, 0, 0, 0.5);
     transition: .25s ease;
+    z-index   : calc(theme('zIndex.2') - 1);
   }
 
   &:not(.toggle-active)~&-shadow {
