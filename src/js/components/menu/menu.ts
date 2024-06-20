@@ -45,6 +45,7 @@ class Menu extends HTMLElement {
     this.classList.toggle('active', this.opened)
     this.shadow.classList.toggle('active', this.opened)
     this.opened ? this.items?.show() : this.items?.hide()
+    document.body.classList.toggle('c-menu-opened', this.opened)
   }
 }
 

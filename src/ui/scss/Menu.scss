@@ -1,6 +1,9 @@
 .c-menu-items {
-  position: absolute;
-  z-index : theme('zIndex.1');
+  position  : absolute;
+  z-index   : theme('zIndex.1');
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
+  border    : 1px solid theme('colors.default / 5%');
+
 
   &:not(.active) {
     pointer-events: none;
@@ -64,14 +67,22 @@
   }
 
   @media (max-width:theme('screens.md')) {
-    position: fixed;
-    bottom  : 0;
-    left    : 0;
-    width   : 100%;
-    height  : auto;
-    z-index : theme('zIndex.4');
+    position  : fixed;
+    bottom    : 0;
+    left      : 0;
+    width     : 100%;
+    height    : auto;
+    z-index   : theme('zIndex.4');
+    max-height: 400px;
+    overflow  : auto;
   }
 
+}
+
+body.c-menu-opened {
+  @media (max-width:theme('screens.md')) {
+    overflow: hidden;
+  }
 }
 
 .c-menu {

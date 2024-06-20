@@ -1,7 +1,7 @@
 <%= require('./html-includes/header.html')() %>
 
 <header class="top-header">
-  <div class="text-sm">344029, г.Ростов-на-Дону, ул. Менжинского, 2Л, офис №106</div>
+  <div class="text-sm opacity-60">344029, г.Ростов-на-Дону, ул. Менжинского, 2Л, офис №106</div>
 
   <div class="ml-auto"></div>
 
@@ -18,7 +18,7 @@
 </section>
 
 <header class="header">
-  <button class="btn btn-icon btn-sm" data-toggle-link="menu">
+  <button class="btn btn-icon btn-sm lg:hidden" data-toggle-link="menu">
     <c-icon class="icon text-3.5xl" href="img/icons.svg#menu"></c-icon>
   </button>
   <img src="img/logo.png" alt="" class="header-logo">
@@ -28,12 +28,101 @@
   </div>
 </header>
 
-<div class="menu" id="menu">
+<div class="menu " id="menu">
   <div class="flex items-center gap-3">
     <button class="btn btn-icon btn-sm btn-primary" data-toggle-link="menu">
       <c-icon class="icon text-3.5xl" href="img/icons.svg#cross"></c-icon>
     </button>
-    <img src="img/logo-primary.png" alt="" class="header-logo">
+    <img src="img/logo-primary.png" alt="" class="w-72 h-11 object-scale-down">
+  </div>
+  <div class="mt-5">
+    <a href="javascript:;" class="btn btn-text gap-4 text-default justify-start">
+      <c-icon class="icon text-2.5xl" href="img/icons.svg#user-contur"></c-icon>
+      Личный кабинет
+    </a>
+    <a href="javascript:;" class="btn btn-default btn-contur btn-sm border-default/20 mt-6 w-full">
+      <span class="font-semibold">Регистрация</span>
+    </a>
+  </div>
+  <div class="mt-5 -mx-4">
+    <!-- Ассоциация -->
+    <c-menu>
+      <c-menu-button class="btn btn-primary w-full gap-3 text-default justify-start">
+        Ассоциация
+        <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 max-md:py-6 " placement="bottom-end">
+        <% for(let i = 0; i < 64; i++) { %>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+        <% } %>
+      </c-menu-items>
+    </c-menu>
+
+    <!-- Виды регби -->
+    <c-menu>
+      <c-menu-button class="btn btn-primary w-full gap-3 text-default justify-start">
+        Виды регби
+        <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 max-md:py-6" placement="bottom-end">
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+      </c-menu-items>
+    </c-menu>
+
+    <!-- Чемпионы -->
+    <c-menu>
+      <c-menu-button class="btn btn-primary w-full gap-3 text-default justify-start">
+        Чемпионы
+        <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 max-md:py-6" placement="bottom-end">
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+      </c-menu-items>
+    </c-menu>
+
+    <a href="javascript:;" class="btn btn-primary w-full gap-3 text-default justify-start">
+      Новости
+    </a>
+
+    <!-- Медиа -->
+    <c-menu>
+      <c-menu-button class="btn btn-primary w-full gap-3 text-default justify-start">
+        Медиа
+        <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 max-md:py-6" placement="bottom-end">
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+
+      </c-menu-items>
+    </c-menu>
+
+    <a href="javascript:;" class="btn btn-primary w-full gap-3 text-default justify-start">
+      <c-icon class="icon text-2.5xl" href="img/icons.svg#bag"></c-icon>
+      Фан-шоп
+    </a>
+  </div>
+  <div class="mt-6">
+    <div class="text-sm opacity-60">344029, г.Ростов-на-Дону, ул. Менжинского, 2Л, офис №106</div>
+  </div>
+  <div class="flex gap-1 items-center mt-6">
+    <a href="javascript:;" class="btn btn-blue btn-icon">
+      <img src="img/soc-color/vk.svg" alt="">
+    </a>
+    <a href="javascript:;" class="btn btn-blue btn-icon">
+      <img src="img/soc-color/telegram.svg" alt="">
+    </a>
+    <a href="javascript:;" class="btn btn-red btn-icon">
+      <img src="img/soc-color/youtube.svg" alt="">
+    </a>
   </div>
 </div>
 <div class="menu-shadow"></div>
@@ -45,7 +134,7 @@
       Ассоциация
       <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
     </c-menu-button>
-    <c-menu-items class="p-2" placement="bottom">
+    <c-menu-items class="p-2 max-md:py-6" placement="bottom">
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
@@ -59,7 +148,7 @@
       Виды регби
       <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
     </c-menu-button>
-    <c-menu-items class="p-2" placement="bottom">
+    <c-menu-items class="p-2 max-md:py-6" placement="bottom">
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
@@ -73,7 +162,7 @@
       Чемпионы
       <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
     </c-menu-button>
-    <c-menu-items class="p-2" placement="bottom">
+    <c-menu-items class="p-2 max-md:py-6" placement="bottom">
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджмент</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
@@ -180,27 +269,14 @@
         </div>
         <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
       </c-menu-button>
-      <c-menu-items class="p-2 w-96" placement="bottom-end">
+      <c-menu-items class="p-2 max-md:py-6 w-96" placement="bottom-end">
+        <% for(let i = 0; i < 10; i++) { %>
         <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
           <span class="text-default text-sm leading-xs">
             Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
           </span>
         </a>
-        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
-          <span class="text-default text-sm leading-xs">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
-          </span>
-        </a>
-        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
-          <span class="text-default text-sm leading-xs">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
-          </span>
-        </a>
-        <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
-          <span class="text-default text-sm leading-xs">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
-          </span>
-        </a>
+        <% } %>
       </c-menu-items>
     </c-menu>
   </div>
@@ -211,7 +287,7 @@
         <div class="swiper-slide w-80 md:w-1/2 lg:w-1/3 px-1 sm:px-2.5">
           <div class="live-item h-full">
             <div class="text-sm">
-              г. Ростов-на-Дону ул. Пойменная,
+              г. Ростов-на-Дону ул. Пойменная, <br>
               2а ГБУ ДО РО «СШОР № 5»
             </div>
 
@@ -297,6 +373,225 @@
   })
 </script>
 
-<div class="h-[2000px]"></div>
+<section class="hero">
+  <div class="hero-slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <% for(let i = 0; i < 4; i++) { %>
+        <div class="swiper-slide hero-buner">
+          <div class="hero-buner-img">
+            <img src="img/test.gif" alt="">
+          </div>
+          <div class="hero-buner-content">
+            <div class="font-semibold md:text-2.5xl color-white mb-3 hero-buner-title">
+              Победители «Ростсельмаш-лиги» сезона 2020/21 <br class="max-md:hidden">
+              отправились в детский лагерь «Нива»
+            </div>
+            <div class="text-sm flex items-center hero-buner-sign">
+              <c-icon class="icon opacity-60 mr-1" href="img/icons.svg#calendar-alt"></c-icon>
+              <span>
+                07 авг 2021 • <span class="hero-buner-mark "> Муниципальные новости</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <% } %>
+
+      </div>
+    </div>
+    <div class="hero-slider-control gap-1 sm:gap-4">
+      <button class="hero-slider-prev btn btn-icon btn-light btn-white rounded-full">
+        <c-icon class="icon opacity-60" href="img/icons.svg#arrow-left"></c-icon>
+      </button>
+      <button class="hero-slider-next btn btn-icon btn-light btn-white rounded-full">
+        <c-icon class="icon opacity-60" href="img/icons.svg#arrow-right"></c-icon>
+      </button>
+    </div>
+  </div>
+  <!-- <div class="hero-blocks">
+    <a href="" class="hero-block">
+      <img src="img/test.gif" alt="">
+    </a>
+    <a href="" class="hero-block">
+      <img src="img/test.gif" alt="">
+    </a>
+  </div> -->
+</section>
+<script>
+  new Swiper('.hero-slider .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    // effect: 'opacity',
+    watchSlidesProgress: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+
+    },
+    navigation: {
+      nextEl: '.hero-slider .hero-slider-next',
+      prevEl: '.hero-slider .hero-slider-prev'
+    }
+  })
+</script>
+
+<!-- Последние новости -->
+<section class="index-news p-section overflow-hidden">
+  <div class="flex items-center mb-10">
+    <div class="title">Последние новости</div>
+    <button class="btn btn-primary font-semibold ml-auto max-sm:hidden">Все новости</button>
+  </div>
+  <div class="index-news-slider relative">
+    <div class="swiper -mx-1 sm:-mx-2.5 max-md:overflow-visible">
+      <div class="swiper-wrapper">
+        <% for(let i = 0; i < 3; i++) { %>
+        <div class="w-80 md:w-1/3 lg:w-1/4 swiper-slide px-1 sm:px-2.5">
+          <a href="" class="news-card h-full">
+            <div class="news-card-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-date flex items-center gap-2 mb-3">
+                <c-icon class="icon text-sm opacity-60" href="img/icons.svg#calendar"></c-icon>
+                <span class="text-xs">
+                  <span class="opacity-80">07 авг 2021 • </span><span class="text-yellow font-semibold">Новое</span>
+                </span>
+              </div>
+              <div class="news-card-tags">
+                <div class="flex">
+                  <div class="news-card-tag">
+                    <span>ШРРЛ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card-title max-md:text-sm  font-semibold hover-link">
+                28 мая состоялся Высший
+                совет Федерации регби
+                России
+              </div>
+            </div>
+          </a>
+        </div>
+        <% } %>
+
+        <div class="w-80 md:w-1/3 lg:w-1/4 swiper-slide px-1 sm:px-2.5">
+          <a href="" class="news-card h-full news-card--popular">
+            <div class="news-card-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-date flex items-center gap-2 mb-3">
+                <c-icon class="icon text-sm opacity-60" href="img/icons.svg#calendar"></c-icon>
+                <span class="text-xs">
+                  <span class="opacity-80">07 авг 2021 • </span><span class="text-green font-semibold">Популярное</span>
+                </span>
+              </div>
+              <div class="news-card-title max-md:text-sm font-semibold hover-link">
+                28 мая состоялся Высший
+                совет Федерации регби
+                России
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="absolute top-1/2 -translate-y-1/2 right-full mr-4 lg:hidden max-md:hidden">
+      <button class="btn btn-icon btn-l3 btn-fill rounded-full shadow-xl index-news-slider-prev">
+        <c-icon class="icon text-lg text-default" href="img/icons.svg#to-left"></c-icon>
+      </button>
+    </div>
+    <div class="absolute top-1/2 -translate-y-1/2 left-full ml-4 lg:hidden max-md:hidden">
+      <button class="btn btn-icon btn-l3 btn-fill rounded-full shadow-xl index-news-slider-next">
+        <c-icon class="icon text-lg text-default" href="img/icons.svg#to-right"></c-icon>
+      </button>
+    </div>
+
+  </div>
+
+</section>
+<script>
+  new Swiper('.index-news-slider>.swiper', {
+    slidesPerView: 'auto',
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.index-news-slider-next',
+      prevEl: '.index-news-slider-prev'
+    }
+  })
+</script>
+
+<div class="mt-auto"></div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <img src="img/logo-white.png" alt="">
+      <!-- <div class="text-body-1 font-semibold mt-6">
+                Ассоциация <br>
+                "Ростсельмаш-лига"
+            </div>
+            <div class="text-sm opacity-60">Детская лига регби</div> -->
+      <img src="img/footer-logo-text.png" alt="" class="mt-6">
+    </div>
+    <div class="footer-nav d-none d-lg-block">
+      <div class="font-semibold mb-3">Об ассоциации</div>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Цели и задачи</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Документы</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Руководство</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Совет тренеров</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Судейство</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80">Правила игры</a>
+    </div>
+    <div class="footer-nav ">
+      <div class="font-semibold mb-3">Соревнования</div>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Кубок “Ростсельмаш по регби”</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">Кубок “Ростсельмаш по регби-7”</a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80">Rugby Fest</a>
+    </div>
+    <div class="footer-nav ">
+      <div class="font-semibold mb-3">Документация</div>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">
+        Условия доставки и возврата
+        товара
+      </a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80 mb-3">
+        Политика конфиденциальности
+      </a>
+      <a href="javascript:;" class="text-sm hover:underline opacity-80">
+        Пользовательское соглашение
+      </a>
+    </div>
+    <div class="footer-nav">
+      <div class="text-body-1 font-semibold mb-3">Контакты</div>
+
+      <div class="flex items-center mb-3">
+        <c-icon class="icon mr-2" href="img/icons.svg#map"></c-icon>
+        Ростов-на-дону, <br>
+        ул. 1-й конной армии 4е
+      </div>
+      <a href="javascript:;" class="flex items-center mb-3 hover:underline">
+        <c-icon class="icon mr-2" href="img/icons.svg#phone"></c-icon>
+        +7(863)333-26-63
+
+      </a>
+      <a href="javascript:;" class="flex items-center hover:underline">
+        <c-icon class="icon mr-2" href="img/icons.svg#mail"></c-icon>
+        info@rsmliga.ru
+      </a>
+
+      <div class="footer-soc mt-10">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom flex text-sm text-black mt-10 font-semibold">
+    <div class="footer-copy">© 2021</div>
+    <a href="javascript:;" class="footer-designer ml-auto hover:underline">Разработка: Студия К.И.Т.</a>
+  </div>
+</footer>
 
 <%= require('./html-includes/footer.html')() %>

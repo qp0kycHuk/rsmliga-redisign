@@ -31,4 +31,33 @@ function loadHandler() {
   swiper.init()
   ymaps.init()
   animations.init()
+
+  window.addEventListener('scroll', scrollHandler)
+  scrollHandler()
+}
+
+let nav: Element | null
+let header: Element | null
+
+function scrollHandler() {
+  nav = nav || document.querySelector('.nav')
+  header = header || document.querySelector('.header')
+
+  nav?.classList.toggle('nav-sticky', nav?.getBoundingClientRect().top <= 1)
+  header?.classList.toggle('header-sticky', header?.getBoundingClientRect().top <= 1)
+}
+
+document.addEventListener('toggleopen', menuOpenHandler)
+document.addEventListener('toggleclose', menuCloseHandler)
+
+function menuOpenHandler(event: any) {
+  if (event.detail.target.id == 'menu') {
+    document.body.classList.add('menu-opened')
+  }
+}
+
+function menuCloseHandler(event: any) {
+  if (event.detail.target.id == 'menu') {
+    document.body.classList.remove('menu-opened')
+  }
 }
