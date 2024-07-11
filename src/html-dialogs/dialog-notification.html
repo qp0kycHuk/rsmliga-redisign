@@ -1,0 +1,79 @@
+<div class="large-dialog fancybox-content card p-6 print-p-0 print-bg-none">
+  <div class="text-2xl font-semibold mb-6">Подтверждение судейства</div>
+  <div class="overflow-auto">
+    <table class="admin-table w-full">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">№</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">Соперники</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">Дата / Время</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">Место проведения</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">Этап</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">Стадия</div>
+        </td>
+        <td class="admin-table-td" colspan="2">
+          <div class="text-xs font-semibold">Статус</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-xs font-semibold">Ваша роль</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-sm opacity-80 text-center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-sm opacity-80">
+            Не заполнено
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-sm opacity-80">
+            DATE
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-sm opacity-80">LOCATION</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-sm opacity-80">STAGE</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-sm opacity-80 text-center">group</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn-green btn-light btn-icon" data-fancybox-modal data-src="/ajax/forms/add_admin.php?match_id=1&role=<?= $role ?>&user=1&last=1" data-type="ajax">
+            <img src="/img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn-red btn-light btn-icon" data-fancybox-modal data-src="/ajax/forms/remove_admin.php?match_id=1&role=1&user=1&last=1" data-type="ajax">
+            <img src="/img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-sm opacity-80">role</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="mt-8 flex">
+    <button class="btn btn-primary btn-fill" onclick="closeModal()">Сохранить</button>
+    <button class="btn btn-primary btn-light ml-2 " onclick="closeModal()">Отмена</button>
+  </div>
+</div>
+<script>
+  function closeModal() {
+    Fancybox.close();
+  }
+</script>

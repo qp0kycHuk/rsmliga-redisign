@@ -128,6 +128,14 @@ body {
     padding-top   : 58px;
     padding-bottom: 62px;
   }
+
+  .card {
+    background    : theme('colors.l3');
+    border-radius : 12px;
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+  }
 }
 
 .top-header {
@@ -724,4 +732,47 @@ body.new-year-theme .footer {
     linear-gradient(81.82deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 23.87%),
     linear-gradient(253.45deg, rgba(105, 0, 27, 0.7) 0%, rgba(210, 28, 75, 0) 100%),
     theme('colors.primary');
+}
+
+.dialog-large,
+.large-dialog {
+  width    : var(--section-width);
+  max-width: 100%;
+}
+
+.admin-table {
+  border-collapse: collapse;
+  border-spacing : 0;
+
+  &-btn {
+    width        : 48px;
+    height       : 46px;
+    border-radius: 8px;
+    font-size    : 26px;
+
+
+  }
+
+  &-td {
+    background: theme('colors.l3');
+    border    : 1px solid theme('colors.default / 10%');
+
+    @media(max-width: theme('screens.md')) {
+      &--disabled {
+        display: none;
+      }
+    }
+  }
+
+  &-head &-td {
+    padding   : 8px;
+    background: theme('colors.default / 5%');
+
+
+  }
+
+  &-doc {
+    margin   : 0 auto;
+    font-size: 20px;
+  }
 }
