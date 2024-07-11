@@ -31,7 +31,7 @@ export class MenuItems extends MenuChild {
     const placement = (this.getAttribute('placement') || 'bottom-start') as keyof typeof placementClassName
 
     this.className = twMerge(
-      'c-menu-items w-56 bg-l3 text-default rounded-md max-h-96 overflow-auto',
+      'c-menu-items w-56 bg-l3 text-default rounded-md ',
       'transition ease-in duration-75',
       placementClassName[placement] || placementClassName['bottom-start'],
       this.className

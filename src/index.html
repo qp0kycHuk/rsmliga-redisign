@@ -5,10 +5,30 @@
 
   <div class="ml-auto"></div>
 
-  <a href="javascript:;" class="btn btn-text gap-4 text-default">
+  <a href="javascript:;" class="btn btn-text gap-3 text-default">
+    <div class="relative">
+      <div class="absolute size-2 rounded-full bg-primary right-1 top-0"></div>
+      <c-icon class="icon text-2xl" href="img/icons.svg#notification-contur"></c-icon>
+    </div>
+    Уведомления
+  </a>
+  <!-- <a href="javascript:;" class="btn btn-text gap-3 text-default">
     <c-icon class="icon text-2.5xl" href="img/icons.svg#user-contur"></c-icon>
     Личный кабинет
-  </a>
+  </a> -->
+  <c-menu>
+    <c-menu-button class="btn btn-text gap-3 text-default cursor-pointer">
+      <c-icon class="icon text-2.5xl" href="img/icons.svg#user-contur"></c-icon>
+      Личный кабинет
+      <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-2 max-md:py-6" placement="bottom">
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Менеджер</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Пользователь</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судья</a>
+
+    </c-menu-items>
+  </c-menu>
   <a href="javascript:;" class="btn btn-default btn-contur btn-sm border-default/20">Регистрация</a>
 </header>
 
@@ -45,6 +65,46 @@
     </a>
   </div>
   <div class="mt-5 -mx-4">
+
+    <!-- Соревнования -->
+    <c-menu>
+      <c-menu-button class="btn btn-primary w-full gap-3 text-default justify-start">
+        Соревнования
+        <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+      </c-menu-button>
+      <c-menu-items class="p-2 max-md:py-6" placement="bottom">
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2022</a>
+        <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2023</a>
+        <c-menu>
+          <c-menu-button class="btn btn-primary btn-xs justify-start text-default text-sm cursor-pointer">
+            2024
+            <c-icon class="icon ml-auto" href="img/icons.svg#triangle-down"></c-icon>
+          </c-menu-button>
+          <c-menu-items class="p-2 max-md:py-6" placement="right">
+            <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </a>
+            <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </a>
+            <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </a>
+            <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </a>
+            <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </a>
+            <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </a>
+
+          </c-menu-items>
+        </c-menu>
+      </c-menu-items>
+    </c-menu>
+
     <!-- Ассоциация -->
     <c-menu>
       <c-menu-button class="btn btn-primary w-full gap-3 text-default justify-start">
@@ -109,6 +169,11 @@
       <c-icon class="icon text-2.5xl" href="img/icons.svg#bag"></c-icon>
       Фан-шоп
     </a>
+
+    <a href="javascript:;" class="btn btn-primary w-full gap-3 text-default justify-start">
+      <c-icon class="icon text-2.5xl" href="img/icons.svg#bag"></c-icon>
+      Корзина
+    </a>
   </div>
   <div class="mt-6">
     <div class="text-sm opacity-60">344029, г.Ростов-на-Дону, ул. Менжинского, 2Л, офис №106</div>
@@ -139,6 +204,30 @@
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Документы</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Судейство</a>
       <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">Контакты</a>
+    </c-menu-items>
+  </c-menu>
+
+  <!-- Соревнования -->
+  <c-menu>
+    <c-menu-button class="btn btn-white gap-3 btn-sm cursor-pointer">
+      Соревнования
+      <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
+    </c-menu-button>
+    <c-menu-items class="p-2 max-md:py-6" placement="bottom">
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2022</a>
+      <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2023</a>
+      <c-menu>
+        <c-menu-button class="btn btn-primary btn-xs justify-start text-default text-sm cursor-pointer">
+          2024
+          <c-icon class="icon ml-auto" href="img/icons.svg#triangle-down"></c-icon>
+        </c-menu-button>
+        <c-menu-items class="p-2 max-md:py-6" placement="right">
+          <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2022</a>
+          <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2023</a>
+          <a href="javascript:;" class="btn btn-primary btn-xs justify-start text-default text-sm">2024</a>
+
+        </c-menu-items>
+      </c-menu>
     </c-menu-items>
   </c-menu>
 
@@ -192,6 +281,11 @@
   <a href="javascript:;" class="btn btn-white gap-3 btn-sm pl-2 cursor-pointer">
     <c-icon class="icon text-2.5xl" href="img/icons.svg#bag"></c-icon>
     Фан-шоп
+  </a>
+
+  <a href="javascript:;" class="btn btn-white gap-3 btn-sm pl-2 cursor-pointer">
+    <c-icon class="icon text-2xl" href="img/icons.svg#cart-contur"></c-icon>
+    Корзина
   </a>
 
   <div class="flex gap-1 items-center">
@@ -264,13 +358,13 @@
     <c-menu class="md:ml-auto flex items-start md:items-center max-md:flex-col gap-2">
       <div class="font-medium">Соревнование</div>
       <c-menu-button class="btn btn-primary btn-text gap-3 btn-sm cursor-pointer max-w-full">
-        <div class="w-96 truncate underline underline-offset-4">
-          Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
+        <div class="max-w-96 truncate underline underline-offset-4">
+          Спартакиада
         </div>
         <c-icon class="icon" href="img/icons.svg#triangle-down"></c-icon>
       </c-menu-button>
-      <c-menu-items class="p-2 max-md:py-6 w-96" placement="bottom-end">
-        <% for(let i = 0; i < 10; i++) { %>
+      <c-menu-items class="p-2 max-md:py-6 w-96 overflow-auto max-h-96 " placement="bottom-end">
+        <% for(let i = 0; i < 12; i++) { %>
         <a href="javascript:;" class="btn btn-primary btn-xs h-auto py-1 justify-start ">
           <span class="text-default text-sm leading-xs">
             Спартакиада по тэг-регби среди учащихся 5-6 классов по тэг-регби среди учащихся 5-6 классов
