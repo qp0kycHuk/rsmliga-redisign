@@ -215,10 +215,10 @@ body {
   color          : #fff;
   border-top     : 1px solid rgba(217, 217, 217, 0.2);
   border-bottom  : 1px solid rgba(217, 217, 217, 0.2);
-
-  position  : sticky;
-  top       : 0;
-  transition: .25s ease;
+  font-size      : 13px;
+  position       : sticky;
+  top            : 0;
+  transition     : .25s ease;
 
   &-sticky {
     background: theme('colors.primary');
